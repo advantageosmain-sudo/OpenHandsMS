@@ -512,3 +512,17 @@ Called by `workspace.get_llm()` in the SDK to retrieve LLM config with the API k
 - `.github/workflows/issue-opened.yml` has a second issue-opened job that auto-applies `good first issue` after the duplicate check completes.
 - The duplicate check is used only as a veto/guardrail for `good first issue` automation: duplicate or overlapping-scope issues should not be auto-labeled.
 - The OpenHands classifier logic for newcomer suitability lives in `scripts/issue_good_first_issue_check_openhands.py`, with focused unit coverage in `tests/unit/test_issue_good_first_issue_check_openhands.py`.
+
+## Reusable System Asset Layer
+
+Use `docs/REUSABLE_SYSTEM_ASSETS.md` when repeated work in this repository should become a durable Skill, Agent, Checklist, SOP, schema, test, rule, or safe automation.
+
+Rules for this layer:
+
+- Inspect existing repository assets before creating new ones.
+- Extend current assets instead of creating duplicates.
+- Preserve this repository's highest-authority instructions, approval gates, security boundaries, release process, and rollback path.
+- Include negative findings for searches or investigations, including no exact matches or no missing references.
+- Do not publish, deploy, spend money, send external messages, change secrets, delete data, merge, or perform destructive cleanup without explicit owner approval for the exact action.
+
+Repository scope: `advantageosmain-sudo/OpenHandsMS`.
