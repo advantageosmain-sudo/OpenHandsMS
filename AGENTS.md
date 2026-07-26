@@ -526,3 +526,8 @@ Rules for this layer:
 - Do not publish, deploy, spend money, send external messages, change secrets, delete data, merge, or perform destructive cleanup without explicit owner approval for the exact action.
 
 Repository scope: `advantageosmain-sudo/OpenHandsMS`.
+
+
+## Reusable asset destinations
+
+Use `skills/README.md` as the authority for shareable OpenHands product prompts in `skills/*.md`. Repository-private V1 instructions belong in `.openhands/skills/*.md`; V0 compatibility instructions belong in `.openhands/microagents/*.md`. These systems are distinct; do not place one in the other or invent an `.agents/skills` destination for this repository.
